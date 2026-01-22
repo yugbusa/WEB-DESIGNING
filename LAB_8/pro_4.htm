@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+     <form action="./thankyou.htm">
+        <table align="center">
+            <h1 align="center">Employee Registration</h1>
+            <h3 align="center">Personal Information</h3>
+            <tr>
+                <td><label for="ei"><mark>Employee Id :</mark></label></td>
+                <td><input type="text" id="ei" placeholder="enter employee id " required></td>
+                
+                <td><label for="en"><mark>Employee Name :</mark></label></td>
+                <td><input type="text" id="en" placeholder="enter employee name" required></td>
+            </tr>
+            <tr>
+                <td><label for="e">Email : </label></td>
+                <td><input type="email" required id="e" placeholder="enter email"></td>
+
+                <td><label for="cn">Contact No : </label></td>
+                <td><input type="tel" id="cn" maxlength="10" required placeholder="enter contact no" pattern="[0-9] {8}"></td>
+            </tr>
+            <tr>
+                <td><label for="ms">Marital Status :</label></td>
+                <td><input type="radio" name="h" id="ms">Single</td>
+                <td><input type="radio" name="h" id="ms">Married</td>
+            </tr>
+            </table>
+            
+            <table align="center">
+                <h3 align="center">Education Qualification</h3>
+                <tr>
+                    <td><label for="ed">Education :</label></td>
+                    <td><input type="text" id="ed" placeholder="enter education details" required></td>
+                    
+                    <td><label for="ex">Experience :</label></td>
+                    <td><input type="text" id="ex" placeholder="enter Experience details" required></td>
+                </tr>
+            </table>
+                
+            <table align="center">
+            <h3 align="center">Job location</h3>
+            <tr>
+                <td><label for="de">Designation</label></td>
+                <td><input type="text" id="de" placeholder="enter Designation details" required></td>
+
+                <td><label for="jl">Job location</label></td>
+                <td><input type="text" id="jl" placeholder="enter job location" required></td>
+
+            </tr>
+            <tr>
+                <td><label for="sl">Salary</label></td>
+                <td><input type="text" id="sl" placeholder="enter Salary details" required></td>
+                
+            </tr>
+             <tr>
+                    <td><label for="p">Password*</label></td>
+                    <td><label for="cp">Confirm Password*</label></td>
+                </tr>
+                <tr>
+                    <td><input type="password" id="p" required></td>
+                    <td><input type="password" id="cp" required pattern="[A-Z] {8}"></td>
+                </tr>
+            </table>
+            <table align="center">
+            <hr>
+            <td><button>Register</button></td>
+            </table>
+        
+     </form>
+    </fieldset>
+      <legend>
+            Your Message
+        </legend>
+        <form action="" method="get">
+            <label for="">Message / Question</label><br>
+            <textarea name="" id="" placeholder="Enter your Feedback or Question here" rows="10" cols="40" maxlength="200" minlength="20"></textarea>
+        </form>
+    </fieldset>
+</body>
+</html>
