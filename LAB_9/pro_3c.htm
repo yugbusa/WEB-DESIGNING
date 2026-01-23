@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="text"]{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="./thankyou.htm">
+        <table align="center">
+            <h1 align="center">Student Registration</h1>
+            <tr>
+                <td><label for="fn">FullName</label></td>
+                <td><input type="text" placeholder="enter your name" id ="fn" required></td>
+            </tr>
+            <tr>
+                <td><label for="e">Email</label></td>
+                <td><input type="email" placeholder="enter your email" id="e" required></td>
+            </tr>
+            <tr>
+                <td><label for="add">Address</label></td>
+                <td><textarea name="" id="add" required rows="10" cols="20"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="mo">MobileNo</label></td>
+                <td><input type="tel" required id="mo" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td><label for="dob">DateOfBirth</label></td>
+                <td><input type="date" required id="dob"></td>           
+            </tr> 
+            <tr>
+                <td><label for="na">Nationality</label></td>
+                <td><select name="" id="na" required>
+                    <option value="" selected>select your country</option>
+                    <option value="">India</option>
+                    <option value="">usa</option>
+                </select></td>
+            </tr>
+            <tr>
+            <td><label for="gen">Gender</label></td>
+            <td><input type="radio" name="h" id="gen">male</td>
+            <td><input type="radio" name="h" id="gen">female</td>
+            </tr>
+            <tr>
+                <td><label for="degree">Highst Degree</label></td>
+                <td><select name="" id="degree" required>
+                    <option value="" selected>select degre</option>
+                    <option value="" >BTech</option>
+                    <option value="" >MTech</option>
+                </select></td>
+            </tr>
+                <tr>
+                    <td><label for="cpi">CPI</label></td>
+                    <td><input type="text" id="cpi" required></td>
+                </tr>
+                <tr>
+                    <td><label for="uni">University</label></td>
+                    <td><input type="text" id="uni" required></td>
+                </tr>
+                <tr>
+                <td><label for="year">Passing Year</label></td>
+                <td><select name="" id="year" required>
+                    <option value="" selected>select year</option>
+                    <option value="" >2029</option>
+                    <option value="" >2030</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><button type="submit">submit</button></td>
+                <td><button type="cancel">cancel</button></td>
+            </tr>            
+      </table>
+    </form>
+</body>
+</html>
