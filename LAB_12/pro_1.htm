@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            animation: changebgcolor 2s;
+            position: absolute;
+
+        }
+
+        .box1 {
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            animation: move 10s infinite;
+            position: absolute;
+
+        }
+
+        .box2 {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(42, 222, 238);
+            animation: delay 10s infinite;
+            position: absolute;
+
+        }
+
+        .box3 {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            position: absolute;
+            animation: delay 10s infinite 2s;
+        }
+
+        .box4 {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            animation: move 20s infinite;
+        }
+
+        @keyframes changebgcolor {
+            from {
+
+                background-color: red;
+            }
+
+            to {
+                background-color: yellow;
+            }
+
+        }
+
+        @keyframes move {
+            0% {
+                margin-left: 0;
+                margin-top: 0;
+            }
+
+            25% {
+                margin-left: calc(100vw - 100px);
+                margin-top: 0;
+            }
+
+            50% {
+                margin-left: calc(100vw - 100px);
+                margin-top: calc(100vh - 100px);
+            }
+
+            75% {
+                margin-left: 0;
+                margin-top: calc(100vh - 100px);
+            }
+
+            100% {
+                margin-left: 0;
+                margin-top: 0;
+            }
+
+        }
+
+        @keyframes reverse {
+            0% {
+                margin-left: 0;
+                margin-top: 0;
+            }
+
+            25% {
+                margin-left: 0;
+                margin-top: calc(100vh - 100px);
+            }
+
+            50% {
+                margin-left: calc(100vw - 100px);
+                margin-top: calc(100vh - 100px);
+            }
+
+            75% {
+                margin-left: calc(100vw - 100px);
+                margin-top: 0;
+            }
+
+            100% {
+                margin-left: 0;
+                margin-top: 0;
+            }
+        }
+
+        @keyframes delay {
+            0% {
+                margin-left: 0;
+                margin-top: 0;
+            }
+
+            25% {
+                margin-left: 0;
+                margin-top: calc(100vh - 100px);
+                ;
+            }
+
+            50% {
+                margin-left: calc(100vw - 100px);
+                margin-top: calc(100vh - 100px);
+            }
+
+            75% {
+                margin-left: calc(100vw - 100px);
+                margin-top: 0;
+            }
+
+            100% {
+                margin-left: 0;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="box"></div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+
+
+</body>
+
+</html>
