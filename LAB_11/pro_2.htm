@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .main {
+        height: 100vh;
+        width: 100vw;
+      }
+      .header {
+        height: 50%;
+        width: 100%;
+        background-image: url(./bg.webp);
+        background-size: 100% 100%;
+      }
+      .navbar {
+        display: flex;
+        height: 20%;
+        width: 100%;
+        justify-content: space-around;
+      }
+      .nav {
+        display: flex;
+        justify-content: space-around;
+        color: azure;
+        gap: 15px;
+      }
+      .search input {
+        border: none;
+        outline: none;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding: 10px;
+      }
+      .search button {
+        border: none;
+        outline: none;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 10px;
+        background-color: red;
+        color: aliceblue;
+      }
+      .text {
+        height: 30%;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        color: blanchedalmond;
+      }
+      .content {
+        height: 10%;
+        width: 100%;
+        background-image: url(./content.png);
+        background-size: 100% 100%;
+      }
+      .footer {
+        display: flex;
+        height: 40%;
+        width: 100%;
+      }
+      .left {
+        width: 30%;
+        height: 100%;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        font-size: 50px;
+      }
+      .h {
+        height: 100%;
+        width: 30%;
+        margin-top: 30px;
+      }
+      .right {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: 100%;
+        align-items: center;
+        text-align: center;
+      }
+      .m {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+      }
+      .block {
+        height: 70%;
+        width: 30%;
+        border: 2px black solid;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <div class="navbar">
+          <div class="logo"><img src="./logo.jpg" alt="" height="60" /></div>
+          <div class="nav">
+            <div class="links">Home</div>
+            <div class="links">My Intro</div>
+            <div class="links">Services</div>
+            <div class="links">Pages</div>
+            <div class="links">Contact</div>
+          </div>
+          <div class="search">
+            <input type="text" placeholder="Enter Keywords..." />
+            <button>Search</button>
+          </div>
+        </div>
+        <div class="text">
+          <h5>hello,this is HR</h5>
+          <h1>DESIGNER</h1>
+          <p>
+            hdshjvf rehugro rliheougf rrkhfo4ghfo rfhroifho fholwihgh g whgp
+          </p>
+        </div>
+      </div>
+      <div class="content"></div>
+      <div class="footer">
+        <div class="left">
+          <div class="h">
+            <h1>22</h1>
+            <h6>Years of Experience</h6>
+          </div>
+        </div>
+        <div class="right">
+          <h3>I am design and developer with a passion for web design</h3>
+          <div class="m">
+            <div class="block">Creative Design</div>
+            <div class="block">Web Design</div>
+            <div class="block">Brand Identity</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
