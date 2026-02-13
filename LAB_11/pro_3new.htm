@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Alea Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+  background:white;
+  overflow-x: hidden;
+}
+
+
+.navbar{
+    background-color: blue;
+height: 10%;
+width: 100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  color:white;
+}
+
+.logo{
+  font-weight:600;
+  font-size:20px;
+}
+
+.nav-links{
+  display:flex;
+  gap:30px;
+  align-items:center;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:white;
+  font-weight:400;
+}
+
+.btn{
+  padding:10px 22px;
+  border-radius:25px;
+  background: violet;
+  color: white;
+  font-weight:600;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+height:75%;
+width: 100%;
+  text-align:center;
+  position:relative;
+}
+
+.hero h1{
+  font-size:36px;
+  font-weight:700;
+  max-width:700px;
+  margin:0 auto 60px;
+}
+
+.hero h1 span{
+  color:blue;
+}
+
+.profile-wrapper{
+  position:relative;
+  display:inline-block;
+}
+
+.profile{
+  width: 200px;
+  height: 250px;
+  background:white;
+  border-radius:150px;
+  overflow:hidden;
+  box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+.profile img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.badge{
+  position:absolute;
+  border-radius:15px;
+  color:#fff;
+  font-size:15px;
+  background:blue;
+}
+
+.badge.left{
+  left:-105px;
+  top:60px;
+}
+
+.badge.right{
+  right:-95px;
+  bottom:50px;
+}
+
+
+.logo-bar{
+  background:black;
+  height: 5%;
+  width: 100%;
+  
+  display:flex;
+  justify-content:center;
+  gap:60px;
+  color:#bbb;
+}
+
+
+.about{
+  height: 30%;
+  width: 100%;
+  background: blue;
+  color: white;
+}
+
+.about-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  gap:40px;
+}
+
+.about h2{
+  font-size:48px;
+  font-weight:700;
+  flex:1 1 250px;
+}
+
+.about-content{
+  flex:2 1 400px;
+}
+
+.about p{
+
+  line-height:1.7;
+  opacity:0.9;
+}
+
+.stats{
+  display:flex;
+justify-content: space-around;  flex-wrap:wrap;
+}
+
+.stat-box{
+  background:linear-gradient(145deg,#9b5de5,#6a4c93);
+  
+  border-radius:20px;
+  min-width:140px;
+  text-align:center;
+}
+
+.stat-box h3{
+  font-size:50px;
+  
+}
+.m{
+    display: flex;
+    align-items: center;
+}
+.m .round{
+    height: 40px;
+    width: 40px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgb(0, 0, 0);
+
+}
+
+
+
+
+</style>
+</head>
+
+<body>
+    <div class="main">
+
+        
+        
+        <nav class="navbar">
+            <div class="m">
+
+                <div class="round">Y</div> <div class="logo">Yug</div>
+            </div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#" class="btn">Let's Talk</a>
+            </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>I’m <span>yug</span>. I will create a web design that can give value to your company</h1>
+
+  <div class="profile-wrapper">
+      <div class="badge left">UI/UX Designer<br>4 years</div>
+      
+    <div class="profile">
+      <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" alt="Profile">
+    </div>
+
+    <div class="badge right">Web Developer<br> 3 years
+    </div>
+</div>
+</section>
+
+<div class="logo-bar">
+    <div>Dribbble</div>
+    <div>LinkedIn</div>
+    <div>Medium</div>
+    <div>Behance</div>
+</div>
+
+<div class="h">
+<section class="about">
+    <div class="about-container">
+        <h3>About<br>Me.</h3>
+        
+        <div class="about-content">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Etiam eu turpis molestie, dictum est a, mattis tellus.
+                Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus.
+            </p>
+
+            </div>
+        </div>
+            <div class="stats">
+                <div class="stat-box">
+                    <h3>4K</h3>
+                    <p>Projects Done</p>
+                </div>
+                
+                <div class="stat-box">
+                    <h3>2K</h3>
+                    <p>Happy Clients</p>
+                </div>
+                
+                <div class="stat-box">
+                    <h3>9K</h3>
+                    <p>Clients Worldwide</p>
+                </div>
+        </div>
+    </div>
+</section>
+</div>
+
+</body>
+</html>
