@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            background-color: black;
+            height: 100vh;
+            width: 100vw;       
+        }
+        .header{
+            background-color: red;
+            height: 15%;
+            width: 100%;
+            align-items: center;
+            text-align: center;         
+        }
+        .content{
+            height: 70%;
+            width: 100%;
+            background-color: yellow;
+            text-align: center;
+        }
+        .navigation{
+            float: left;
+            height: 100%;
+            width: 40%;
+            background-color: crimson;
+        }
+        .sidebar{
+            height: 70%;
+            width: 25%;
+            background-color: green;
+            float: right;
+        }
+        .footer{
+            background-color: darkblue;
+            height: 15%;
+            text-align: center;
+            color: antiquewhite;
+        }
+        @media screen and (max-width: 800px) {
+            .main{
+                background-color: black;
+                height: 100vh;
+                width: 100vw;       
+            }
+
+            .content{
+                height: 70%;
+                width: 100%;
+                background-color: yellow;
+                text-align: center;
+            }
+            .navigation{
+                float: left;
+                height: 100%;
+                width: 40%;
+                background-color: crimson;
+            }
+            .sidebar{
+                height: 70%;
+                width: 25%;
+                background-color: green;
+                float: right;
+            }
+            .footer{
+                background-color: darkblue;
+                height: 15%;
+                text-align: center;
+                color: antiquewhite;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">Header</div>
+        <div class="content">content
+            <div class="navigation">navigation</div>
+            <div class="sidebar">sidebar</div>
+        </div>
+        <div class="footer">&copy;Darshan University-Rajkot</div>
+    </div>
+</body>
+</html>

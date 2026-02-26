@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>a</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .main {
+        background-color: rgba(8, 247, 227, 0.463);
+        height: 100vh;
+        width: 100vw;
+        text-align: center;
+      }
+      .section {
+        height: 90%;
+        width: 95%;
+        background-color:rgba(252, 0, 239, 0.539);
+        margin: 10px;
+      }
+      .header {
+        background-color: red;
+        height: 10%;
+        width: 100%;
+      }
+      .content {
+        height: 80%;
+        width: 100%;
+      }
+      .footer {
+        height: 10%;
+        width: 100%;
+        background-color: rgb(7, 56, 233);
+        text-align: center;
+      }
+      .left {
+        float: left;
+        width: 60%;
+        height: 100%;
+      }
+      .right {
+        float: right;
+        width: 40%;
+        height: 100%;
+      }
+      .entry {
+        width: 90%;
+        height: 10%;
+        background-color: black;
+        color: aliceblue;
+        margin: 10px;
+      }
+      .sidebar {
+        width: 90%;
+        height: 40%;
+        margin: 10px;
+        background-color: black;
+        color: aliceblue;
+      }
+      @media (max-width: 500px) {
+        .sidebar{
+            width: 90%;
+            height: 50%;
+             margin-right: 10px; 
+           
+        }
+          .left{
+            display: block;
+            height: 50%;
+            width: 100%;
+        }
+          .right{
+            display: block;
+             height: 50%;
+            width: 80%;
+            margin-right: 25px;
+           
+
+        }
+        .section{
+            height: 100%;
+            width: 100%;
+            margin-left: -4px;
+            
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div>page</div>
+      <div class="section">
+        <div class="header">Header</div> 
+        <div class="content">
+          <div>content</div>
+          <div class="left">
+            <div class="entry">entry</div>
+            <div class="entry">entry</div>
+            <div class="entry">entry</div>
+          </div>
+          <div class="right">
+            <div class="sidebar">sidebar</div>
+          </div>
+        </div>
+        <div class="footer">@ Darshan university Ltd</div>
+      </div>
+    </div>
+  </body>
+</html>

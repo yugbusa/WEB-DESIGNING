@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .main {
+            height: 100vh;
+            width: 100vw;
+        }
+        .header {
+            height: 20%;
+            width: 100%;
+        }
+        .header-right {
+            float: right;
+            margin: 20px;
+        }
+        .header-left {
+            float: left;
+            margin: 30px;
+            margin-top: 10px;
+        }
+        img {
+            height: 50px;
+            width: 50px;
+        }
+        .link {
+            display: inline-block;
+        }
+        .content {
+            height: 72%;
+            width: 100%;
+        }
+        .sidebar {
+            background-color: red;
+            height: 100%;
+            width: 20%;
+
+            float: left;
+        }
+        .content-right {
+            height: 100%;
+            width: 80%;         
+            display: inline-block;
+        }
+        .link1 {
+            height: 18%;
+        }
+        .row{
+            width: 100%;
+            height: 30%;
+            margin-bottom: 10px;
+        }
+        .card{
+            display: inline-block;
+            margin-right: 20px;
+        }
+       .footer{
+            text-align: center;
+            background-color: blue;
+            height: 8%;
+        }
+        @media screen and (max-width: 500px) {
+            .header-right{
+                display: block;
+                text-align: center;
+            }
+             .header-left{
+                display: block;
+                text-align: center;
+            }
+             .content-right{
+                display: block;
+                text-align: center;
+            }
+             .sidebar{
+                display: block;
+                text-align: center;
+            }
+             .link1{
+                display: block;
+                text-align: center;
+            }         
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="header-right">
+                <div class="link">Home</div>
+                <div class="link">About</div>
+                <div class="link">Contact</div>
+                <div class="link">Login</div>
+            </div>
+            <div class="header-left">
+                 <img src="./bg.webp">         
+            </div>
+        </div>
+        <div class="content">
+            <div class="sidebar">
+                <div class="link">sidebar</div>
+                <hr>
+                <hr>
+                <div class="link1">Home</div>
+                <hr>
+                <hr>
+                <div class="link1">Placement</div>
+                <hr>
+                <hr>
+                <div class="link1">Requirement</div>
+                <hr>
+                <hr>
+                <div class="link1">Faculty</div>
+                <hr>
+                <hr>
+                <div class="link1">news</div>
+                <hr>
+                <hr>
+            </div>
+            <div class="content-right">
+                <div class="row">
+                    <div class="card">
+                        <img src="./bg.webp" alt="">
+                        <div>india</div>
+                    </div>
+                    <div class="card">
+                        <img src="./bg.webp" alt="">
+                        <div>india</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <img src="./bg.webp" alt="">
+                        <div>india</div>
+                    </div>
+                    <div class="card">
+                        <img src="./bg.webp" alt="">
+                        <div>india</div>
+                    </div>
+                    <div class="card">
+                        <img src="./bg.webp" alt="">
+                        <div>india</div>
+                    </div>
+                    <div class="card">
+                        <img src="./bg.webp" alt="">
+                        <div>india</div>
+                    </div>
+                    <div class="card">
+                        <img src="./bg.webp" alt="">
+                        <div>india</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">&copy;DArshan University-Rajkot</div>
+    </div>
+</body>
+</html>
